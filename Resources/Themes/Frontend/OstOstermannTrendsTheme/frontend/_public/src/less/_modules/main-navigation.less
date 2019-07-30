@@ -1,0 +1,68 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+body nav.navigation-main {
+
+    border: none;
+
+
+    div.navigation--list-wrapper {
+
+        border-top: 1px solid @color-medium-gray;
+
+
+        ul.navigation--list li.navigation--entry {
+
+
+
+            // uppercase for every element
+            a.navigation--link span {
+                text-transform: uppercase;
+            }
+
+            // remove "home"
+            a.navigation--link.is--first {
+                display: none;
+            }
+
+
+
+            a.navigation--link.active, a.navigation--link.is--active {
+                background: none;
+                color: inherit;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    body nav.navigation-main {
+
+        .container {
+            max-width: 1180px;
+        }
+
+
+
+
+    }
+
+
+}

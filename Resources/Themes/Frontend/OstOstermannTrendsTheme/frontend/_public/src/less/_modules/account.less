@@ -1,0 +1,256 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+
+// force special for logout page for both body.is--user and default body
+body.is--ctl-account.is--act-logout {
+    section.content-main.container {
+        div.content--wrapper {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// account logout
+body.is--ctl-account.is--act-logout {
+
+    div.account--content.content {
+        margin-top: 0;
+
+        h1.panel--title {
+            padding: 20px;
+        }
+
+        div.panel--body {
+            padding: 0 20px;
+            border-bottom: 10px solid #e7eced;
+            padding-bottom: 20px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        div.panel--actions {
+            text-align: right;
+
+            a {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+body.is--ctl-account.is--act-index {
+    div.account--content {
+        margin-top: 0;
+
+        div.account--welcome {
+            margin-bottom: 10px;
+            padding: 20px;
+
+            h1 {
+                margin-top: 0;
+                padding-top: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        div.account-info--container {
+            div.account--info {
+
+                margin-bottom: 10px;
+            }
+            div.account--payment {
+
+                margin-bottom: 10px;
+            }
+        }
+
+
+        div.account-address--container {
+            div.account--billing {
+
+                margin-bottom: 10px;
+            }
+            div.account--shipping {
+
+                margin-bottom: 10px;
+            }
+        }
+
+        // the section container has 10px padding so we end with 0 margin
+        div.account--newsletter {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+    // left sidebar for every menu within the account
+    body.is--ctl-account,
+    body.is--ctl-note,
+    body.is--ctl-address {
+
+        div.sidebar--categories-wrapper {
+            background: #ffffff;
+
+            div.account--menu {
+                border: 0;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    // account profile
+    body.is--ctl-account.is--act-profile {
+
+        div.account--profile {
+            padding-top: 0;
+
+            > form {
+                div.panel {
+                    margin-bottom: 10px;
+                }
+            }
+
+            div.profile--email-password-container {
+                div.profile-email--container {
+
+
+                    margin-bottom: 10px;
+
+                    > form > div.panel {
+                        margin-bottom: 0;
+                    }
+                }
+                div.profile-password--container {
+
+
+                    > form > div.panel {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+
+
+
+
+
+    // account index
+    body.is--ctl-account.is--act-index {
+
+        div.account--content {
+
+            div.account-info--container {
+                div.account--info {
+                    width: ~"calc(50% - 5px)";
+                    margin-right: 5px;
+                }
+                div.account--payment {
+                    width: ~"calc(50% - 5px)";
+                    margin-left: 5px;
+                }
+            }
+
+
+            div.account-address--container {
+                div.account--billing {
+                    width: ~"calc(50% - 5px)";
+                    margin-right: 5px;
+                }
+                div.account--shipping {
+                    width: ~"calc(50% - 5px)";
+                    margin-left: 5px;
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+    // account profile
+    body.is--ctl-account.is--act-profile {
+
+        div.account--profile {
+
+            div.profile--email-password-container {
+
+
+
+                div.profile-email--container {
+                    margin-bottom: 0;
+
+                    width: ~"calc(50% - 5px)";
+                    margin-right: 5px;
+
+                }
+                div.profile-password--container {
+                    width: ~"calc(50% - 5px)";
+                    margin-left: 5px;
+
+                }
+            }
+        }
+
+    }
+
+
+}

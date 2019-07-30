@@ -1,0 +1,394 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+
+// remove shipping costs table when user is logged in
+body.is--ctl-checkout.is--act-cart.is--user {
+    div.content.content--basket {
+        div.product--table {
+            div.basket--footer {
+                div.table--aggregation {
+                    form.table--shipping-costs {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// fix margin because we dont have the star icons for prices
+body.is--ctl-checkout.is--act-cart {
+    .product--table .is--no-star {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+
+    body.is--ctl-checkout.is--act-confirm {
+        div.confirm--content .product--essential-features {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+    body.is--ctl-checkout.is--act-cart {
+
+
+
+
+        div.content div.product--table {
+
+            margin-top: 10px;
+
+
+
+
+
+            // alert outside the panel which is on top of the table--action container
+            // and also every alert within an article (e.g. article assembly notice)
+            .alert {
+                margin-bottom: 10px;
+            }
+
+            // alert inside the panel and between table--action container and the products
+            div.panel div.panel--body > .alert {
+                margin-top: 10px;
+                margin-bottom: 0;
+                border-bottom: 10px solid #e7eced;
+            }
+
+
+
+
+
+
+
+            div.table--actions {
+
+                padding-bottom: 0;
+                margin-bottom: 10px;
+
+                div.main--actions {
+                    background: #ffffff;
+                }
+            }
+
+            div.table--actions.actions--bottom {
+                div.main--actions {
+                    margin-top: 10px;
+                }
+            }
+
+
+
+            // product table
+            div.panel div.panel--body {
+                border: 0;
+                padding: 0;
+
+
+                div.table--header {
+                    padding: 10px 20px 0 20px;
+                }
+
+                div.table--tr {
+                    padding: 0 20px;
+                    border: 0;
+                }
+
+                form.table--add-product {
+                    width: 100%;
+                    padding: 10px 0;
+                    margin: 0;
+                    background: @color-background-gray;
+
+                    input.add-product--field {
+                        border-radius: 0;
+                        box-shadow: none;
+                        width: 20%;
+                        background: #ffffff;
+                    }
+
+                    button {
+                        width: 50px;
+                    }
+                }
+
+                div.basket--footer {
+                    width: 100%;
+                    margin: auto;
+                    border: none;
+                    display: grid;
+                    grid-template-columns: repeat( 2, 1fr );
+                    grid-gap: 10px;
+                    background-color: @color-background-gray;
+                    padding: 0;
+                    grid-row-gap: 0;
+
+
+
+                    > div, > ul {
+                        background-color: #ffffff;
+                        grid-column: span 1;
+                        padding: 10px;
+                        width: 100%;
+                        display: block;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+    body.is--ctl-checkout.is--act-shippingpayment {
+
+        div.content.content--confirm {
+
+            margin-top: 10px;
+            margin-bottom: 0;
+
+
+            form#shippingPaymentForm {
+                div.confirm--actions {
+                    background: #ffffff;
+                    margin-top: 0;
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            div.shipping-payment--information {
+                div.payment--method-list {
+                    border: none;
+                    margin-bottom: 10px;
+                }
+
+                div.dispatch--method-list {
+                    border: none;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            div.basket--footer {
+                border: none;
+            }
+
+            div.confirm--actions.actions--bottom {
+                background: #ffffff;
+                padding: 0;
+                margin: 0;
+                margin-top: 10px;
+
+                button {
+                    margin: 0;
+                }
+            }
+
+            footer.table--footer {
+                display: none;
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+    body.is--ctl-checkout.is--act-confirm {
+
+        div.content.confirm--content {
+
+            margin-top: 10px;
+            padding: 0;
+
+
+            form#confirm--form {
+
+                div.tos--panel {
+                    margin: 0;
+                }
+
+                div.information--panel-wrapper {
+                    margin: 0;
+                    margin-top: 10px;
+
+                    // payment has no specific class so we have to set it here and overwrite it later
+                    div.information--panel-item {
+                        margin: 0;
+                        padding: 0;
+                        width: @width-3-column-layout-1-col;
+                    }
+
+                    // both billing and shipping address
+                    div.information--panel-item.information--panel-address {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-2-col;
+                    }
+
+                    // billing address
+                    div.information--panel-item.information--panel-item-billing {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-1-col;
+                    }
+
+                    // shipping address
+                    div.information--panel-item.information--panel-item-shipping {
+                        margin-right: 10px;
+                        width: @width-3-column-layout-1-col;
+                    }
+                }
+
+            }
+
+
+            div.product--table {
+                & > div.panel {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    div.panel--body {
+                        border: none;
+                    }
+                }
+
+                div.table--actions.actions--bottom {
+                    margin: 0;
+                    padding: 0;
+                    background: #ffffff;
+
+                    div.main--actions {
+                        margin: 0;
+
+
+                        div.alert {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+
+
+
+            div.ost-stores--pickup-store-selection {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+    body.is--ctl-checkout.is--act-finish {
+
+        div.content.checkout--content.finish--content {
+            padding: 0;
+            margin-top: 10px;
+
+            div.finish--teaser {
+                margin-bottom: 10px;
+            }
+
+
+            div.information--panel-wrapper {
+                margin: 0;
+                margin-top: 10px;
+
+                // payment has no specific class so we have to set it here and overwrite it later
+                div.information--panel-item {
+                    margin: 0;
+                    padding: 0;
+                    width: @width-3-column-layout-1-col;
+                }
+
+                // both billing and shipping address
+                div.information--panel-item.information--panel-address {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-2-col;
+                }
+
+                // billing address
+                div.information--panel-item.information--panel-item-billing {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-1-col;
+                }
+
+                // shipping address
+                div.information--panel-item.information--panel-item-shipping {
+                    margin-right: 10px;
+                    width: @width-3-column-layout-1-col;
+                }
+            }
+
+
+            div.finish--table.product--table {
+                margin-top: 10px;
+
+                & > div.panel {
+                    div.panel--body {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+

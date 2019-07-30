@@ -1,0 +1,45 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+// default for every viewport
+.filter-panel--flyout {
+    border-radius: 0;
+}
+
+.filter-panel {
+    background: @color-form-element-background;
+}
+
+
+
+// make every filter option flag (select and input) and distribute 4 facets in a row evenly
+@media screen and (min-width: @tabletViewportWidth) {
+
+    // everything within a filter
+    .action--filter-options {
+        div.filter--container {
+
+            // the container is made for 3 facets in a row
+            // we have to move it 1% to the left to make it look even for 4 facets in a row
+            div.filter--facet-container {
+                margin-left: -1%;
+
+                // remove every border radius to make everything flat
+                div.filter-panel {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+
+}

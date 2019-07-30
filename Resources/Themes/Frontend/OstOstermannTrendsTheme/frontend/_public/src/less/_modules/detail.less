@@ -1,0 +1,883 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+// every viewport on detail page
+body.is--ctl-detail.is--act-index {
+
+    // remove icon from buy button
+    div.buybox--button-container {
+        button.buybox--button {
+            padding-right: 12px;
+
+            i.icon--arrow-right {
+                display: none;
+            }
+        }
+    }
+
+    // remove min height and padding
+    .similar--content,
+    .viewed--content,
+    .bought--content,
+    .related--content,
+    .product-streams--content {
+        .product-slider {
+            padding: 0;
+            min-height: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+body.is--ctl-detail.is--act-index {
+
+    section.content-main {
+
+        div.content-main--inner {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: ~"calc(100% - 20px)";
+
+            // double background for everything below product details (e.g. last seen products)
+            // and to finish the content
+            background: @color-background-gray;
+
+
+
+            div.content.product--details {
+
+                background: @color-background-gray;
+
+
+
+                > div:last-child {
+                    margin-bottom: 0 !important;
+                }
+
+
+
+
+
+                div.product--detail-upper {
+
+                    header.product--header {
+                        padding: 0;
+
+                        h1.product--title {
+                            width: 100%;
+                            font-size: @font-size-detail-title;
+                            font-weight: normal;
+                            color: @font-color-detail-title;
+                            letter-spacing: @font-letter-spacing-detail-title;
+                        }
+                    }
+
+
+
+
+
+                    // left image container
+                    div.product--image-container {
+                        background: #ffffff;
+                        margin-bottom: 0;
+                        padding: 20px;
+
+
+                        div.image--thumbnails.image-slider--thumbnails {
+                            width: 100%;
+                            margin-top: 20px;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            float: left;
+                            display: block;
+
+
+                            div.image-slider--thumbnails-slide {
+                                display: inline-flex;
+
+                                a.thumbnail--link {
+                                    margin: 0 20px 0 0;
+                                }
+                            }
+                        }
+
+
+                    }
+
+
+                    div.product--buybox {
+                        background: #ffffff;
+
+                        margin-top: 10px;
+
+                        div.buybox--inner {
+                            background: #ffffff;
+                            padding: 20px;
+
+
+
+
+                            // custom sku article number container
+                            div.product-info--sku {
+                                margin-bottom: 24px;
+                            }
+
+
+
+
+
+                            // everything for the price
+                            div.product--price.price--default {
+                                span.price--content {
+                                    font-weight: normal;
+                                    font-size: @font-size-detail-price;
+                                    color: @font-color-detail-price;
+                                    letter-spacing: @font-letter-spacing-detail-price;
+                                }
+                            }
+
+
+
+                            // every when we have a pseudo price
+                            div.product--price.price--default.price--discount {
+                                span.price--discount-icon {
+                                    display: none;
+                                }
+
+                                span.content--discount {
+                                    display: block;
+                                    font-weight: normal;
+                                    font-size: @font-size-detail-pseudo-price;
+                                    color: @font-color-detail-pseudo-price;
+                                    letter-spacing: @font-letter-spacing-detail-pseudo-price;
+
+
+                                    span.price--discount-percentage {
+                                        display: none;
+                                    }
+                                }
+
+                                span.price--content {
+                                    color: @color-text-red;
+                                }
+                            }
+
+
+
+
+
+
+
+                            // container for shipping costs and delivery time
+                            div.product--delivery-and-shipping-costs {
+                                padding: 10px;
+                                border: 1px solid @color-medium-gray;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                            }
+
+
+
+
+
+
+                            form.buybox--form {
+                                padding: 0;
+                                margin-top: 10px;
+                                width: 100%;
+
+
+
+                                div.buybox--button-container {
+
+                                    div.buybox--quantity {
+                                        width: ~"calc(25% - 10px)";
+                                        margin-right: 10px;
+                                    }
+
+                                    button.buybox--button {
+                                        width: 75%;
+                                    }
+                                }
+                            }
+
+
+
+
+
+
+                        }
+
+
+
+
+
+                        div.product--actions-container,
+                        div.product--security-box,
+                        div.product--payment-box {
+                            background: #ffffff;
+                            // margin-top: 10px;
+                            border-top: 10px solid @color-background-gray;
+                        }
+
+
+
+
+
+
+                        div.product--actions-container {
+
+                            padding: 20px;
+                            padding-top: 0;
+
+                            nav.product--actions {
+                                border: none;
+                                padding: 0;
+                                margin: 0;
+                                text-align: center;
+
+
+
+                                > * {
+                                    width: 50%;
+                                    text-align: center;
+                                    margin: 0;
+                                    margin-top: 20px;
+                                    padding: 0;
+
+                                    button {
+                                        margin: 0;
+                                    }
+                                }
+
+
+                                > a {
+                                    float: left;
+                                    display: block;
+                                }
+
+                                i.article-question--icon,
+                                i.tell-a-friend--icon,
+                                i.pdf--icon {
+                                    font-size: 14px;
+                                }
+                            }
+
+                        }
+
+
+
+
+
+
+
+
+                        div.product--payment-box {
+
+                            padding: 20px;
+                            text-align: center;
+
+                            img {
+                                display: inline;
+                            }
+
+
+
+                        }
+
+
+
+
+                        div.product--security-box {
+
+                            padding: 20px;
+
+                            h5 {
+                                margin-top: 0;
+                            }
+
+                            p {
+                                border-bottom: 1px solid @color-medium-gray;
+                                margin-bottom: 20px;
+                                padding-bottom: 10px;
+                            }
+
+                            div {
+                                a {
+                                    color: inherit;
+
+                                    div {
+                                        margin: 0;
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        position: relative;
+
+                                        padding-left: 100px;
+
+
+                                        ul {
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+
+
+
+
+
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+                // lower box with description and tabs
+                div.tab-menu--product {
+                    background: #ffffff;
+                    margin-bottom: 10px;
+
+
+                    div.tab--navigation {
+                        a.tab--link {
+                            border: none;
+                            border-radius: 0;
+                            background: none;
+                            border-right: 1px solid @color-medium-gray;
+                            color: @color-medium-gray;
+                            margin-right: 0;
+                            margin-left: -4px;
+
+                            &.is--active {
+                                color: inherit;
+                            }
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+
+                    div.tab--container-list {
+                        div.tab--container {
+                            border: none;
+                            border-top: 1px solid @color-medium-gray;
+
+
+
+                            div.content--shipping-details,
+                            div.content--supplier {
+                                padding: 20px;
+                                div.content--title {
+                                    margin-top: 0;
+                                }
+                            }
+
+
+
+                            // specific description
+                            div.content--description {
+
+                                padding: 20px;
+
+                                div.content--title {
+                                    margin-top: 0;
+                                }
+
+
+
+                                div.content--title.product-properties--title {
+                                    margin-top: 24px;
+
+                                }
+                                div.product--properties {
+                                    width: 100%;
+
+
+                                    table tr td.product--properties-label {
+                                        width: 30%;
+                                    }
+
+                                    table tr td.product--properties-value {
+                                        width: 70%;
+                                    }
+                                }
+                            }
+
+
+
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
+
+                div.ost-cross-selling {
+                    background: #ffffff;
+                    margin-bottom: 10px;
+
+
+                    div.title {
+                        padding: 10px 15px 10px 15px;
+                        margin: 0px 5px 0px 0px;
+                        line-height: 24px;
+                        font-size: 14px;
+                        top: 1px;
+                        position: relative;
+                        font-weight: 700;
+                        text-align: center;
+                        white-space: nowrap;
+                        color: #3f4c58;
+                        display: inline-block;
+                        border: none;
+                    }
+
+                    div.product-slider {
+                        border-top: 1px solid #dadae5;
+
+
+
+                        div.product-slider--item {
+                            width: 50%;
+
+
+                            /*
+                            div.product--box.box--slider {
+                                margin-bottom: 10px;
+                            }
+
+                            div.product--box.box--slider:last-child {
+                                margin-bottom: 0;
+                            }
+                            */
+                        }
+
+                        a.product-slider--arrow.arrow--next {
+                            border-right: none;
+                        }
+
+                        a.product-slider--arrow.arrow--prev {
+                            border-left: none;
+                        }
+
+                    }
+
+
+
+                }
+
+
+
+
+
+
+
+
+                // cross selling articles
+                div.tab-menu--cross-selling {
+                    background: #ffffff;
+                    margin-bottom: 10px;
+
+
+                    div.tab--navigation {
+                        a.tab--link {
+                            border: none;
+                            border-radius: 0;
+                            background: none;
+                            border-right: 1px solid @color-medium-gray;
+                            color: @color-medium-gray;
+                            margin-right: 0;
+                            margin-left: -4px;
+
+                            &.is--active {
+                                color: inherit;
+                            }
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            span.product--rating-count-wrapper {
+                                display: none;
+                            }
+                        }
+                    }
+
+
+                    div.tab--container-list {
+                        div.tab--container {
+                            border: none;
+                            border-top: 1px solid @color-medium-gray;
+                            border-radius: 0;
+                            margin-bottom: 0;
+                        }
+
+
+
+                        div.tab--container:first-child {
+                            border: none;
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+        }
+    }
+}
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+    body.is--ctl-detail.is--act-index {
+
+        section.content-main {
+
+
+            div.content-main--inner {
+
+
+
+
+
+                div.content.product--details {
+
+
+
+                    // upper box with images and buy box
+                    div.product--detail-upper {
+
+
+                        display: flex;
+                        align-items: stretch;
+
+
+
+
+
+                        // left image container
+                        div.product--image-container {
+
+                            width: 60%;
+                            margin-right: 0;
+                            margin-bottom: 10px;
+
+
+
+                            div.image--thumbnails.image-slider--thumbnails {
+                                height: 80px;
+                            }
+
+
+
+                        }
+
+
+                        // right product box
+                        div.product--buybox {
+
+
+
+                            width: ~"calc(40% - 10px)";
+                            margin-left: 10px;
+
+                            margin-top: 0;
+
+
+                            // upper buy-box with basket button
+                            div.buybox--inner {
+
+
+
+
+                                // we moved product supplier image here
+                                div.product--supplier {
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 10px;
+                                    width: 10%;
+                                }
+
+
+
+
+
+
+
+
+
+
+                            }
+
+
+
+
+
+
+
+
+
+
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+                    // lower box with description and tabs
+                    div.tab-menu--product {
+                        width: 60%;
+                        min-height: 682px;
+
+
+
+
+                        div.tab--container-list {
+                            div.tab--container {
+
+
+
+                                div.content--description,
+                                div.content--shipping-details,
+                                div.content--supplier {
+                                    padding: 30px;
+                                }
+
+
+
+
+
+                            }
+                        }
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+                    div.ost-cross-selling {
+
+                        margin-left: 10px;
+                        float: left;
+                        margin-bottom: 0;
+
+                        height: 682px;
+
+
+                    }
+
+
+
+
+
+
+                    div.tab-menu--product {
+                        float: left;
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    // cross selling articles
+                    div.tab-menu--cross-selling {
+
+
+
+                        div.tab--container-list {
+
+
+                            div.tab--container {
+                                margin-bottom: 0;
+                            }
+
+
+
+                            div.tab--container:first-child {
+                                border-top: 1px solid @color-medium-gray;
+                            }
+                        }
+                    }
+
+
+                }
+
+
+            }
+
+
+
+
+
+        }
+    }
+
+}
+
+
+
+
+
+// product description content
+body.is--ctl-detail.is--act-index {
+
+    // ...
+    .product--details .content--description {
+        // and always have line-height same as default <p>
+        .product--description {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+}
+
+
+
+
+// shipping details content
+body.is--ctl-detail.is--act-index {
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @desktopViewportWidth) {
+        .product--details .content--shipping-details {
+            padding: 0.625rem 2.8125rem 2.8125rem 2.8125rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    .product--details .content--shipping-details {
+        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+
+        // and always have line-height same as default <p>
+        .product--description {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @tabletViewportWidth) {
+        .product--details .content--shipping-details {
+            padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+// supplier details
+body.is--ctl-detail.is--act-index {
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @desktopViewportWidth) {
+        .product--details .content--supplier {
+            padding: 0.625rem 2.8125rem 2.8125rem 2.8125rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    .product--details .content--supplier {
+        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+
+        // and always have line-height same as default <p>
+        .product--description {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    // fix padding for shipping-detail container
+    @media screen and (min-width: @tabletViewportWidth) {
+        .product--details .content--supplier {
+            padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+        }
+
+    }
+}
+

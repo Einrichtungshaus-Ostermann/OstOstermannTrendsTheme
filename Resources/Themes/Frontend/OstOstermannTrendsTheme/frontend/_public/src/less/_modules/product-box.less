@@ -1,0 +1,435 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+body {
+
+    // every product box (no matter the layout, including emotion)
+    // we only set typography stuff like color, font size etc
+    .product--box {
+
+        // the inner container
+        .box--content {
+            background: #ffffff;
+            border: none;
+
+            // inner container with image, name, price etc
+            .product--info {
+
+                // only one for the name and specific typography
+                a.product--title {
+                    height: 20px;
+                    font-weight: normal;
+                    color: @color-text-light-gray;
+                }
+
+                // remove unit price and set default height
+                .product--price-info {
+                    height: @font-size-listing-price;
+                    text-align: right;
+
+                    // remove unit price
+                    .price--unit {
+                        display: none;
+                    }
+
+                    // the price itself
+                    .product--price {
+                        height: @font-size-listing-price;
+
+                        // default price
+                        .price--default {
+                            font-weight: normal;
+                            font-size: @font-size-listing-price;
+                            letter-spacing: @font-letter-spacing-listing-price;
+                            line-height: @font-size-listing-price;
+                            color: @color-text-light-gray;
+
+                            // discount price
+                            &.is--discount {
+                                color: @color-text-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // box slider specific for multiple articles in one row
+    div.product-slider div.product-slider--item {
+        div.product--box.box--slider {
+            margin-bottom: 10px;
+        }
+
+        div.product--box.box--slider:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+// everywhere
+body {
+
+
+
+    // we need special padding and width for 4-column listing
+    .product--box.box--basic {
+        padding: 10px 0 0 10px;
+        width: 50%;
+    }
+
+
+
+
+    .product--box.box--basic {
+
+        // compensate outer padding
+        .box--content {
+            padding: 0;
+
+            // inner container with image, name, price etc
+            .product--info {
+                padding: 0;
+
+                // the image link container
+                // reset position and set specific height of the image to get 4:3 aspect ratio
+                a.product--image {
+                    display: block;
+                    width: 100%;
+                    height: 168px;
+                    position: relative;
+                }
+
+                // only one for the name and specific typography
+                a.product--title {
+                    margin: 5px 0 5px 0;
+                    padding: 0 8px;
+                }
+
+                // remove description
+                .product--description {
+                    display: none;
+                }
+
+                // remove actions
+                .product--actions {
+                    display: none;
+                }
+
+                // remove unit price and set default height
+                .product--price-info {
+                    padding: 0 8px 0 8px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .product--box.box--basic {
+
+        // compensate outer padding
+        .box--content {
+
+            // inner container with image, name, price etc
+            .product--info {
+
+                // the image link container
+                // reset position and set specific height of the image to get 4:3 aspect ratio
+                a.product--image {
+                    height: 168px;
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// everywhere
+body {
+
+    section.emotion--container.emotion--column-2 .emotion--element.col-xl-1 .product--box.box--emotion{
+
+        // compensate outer padding
+        .box--content {
+            padding: 0;
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+// everywhere
+body {
+
+    .emotion--product .product--box .product--image {
+        height: 284px;
+    }
+
+}
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+    body {
+
+        .emotion--product .product--box .product--image {
+            height: 186px;
+        }
+
+    }
+}
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+    body {
+
+        .emotion--product .product--box .product--image {
+            height: 70%
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ...
+@media screen and(min-width: @tabletViewportWidth) {
+
+    // everywhere
+    body {
+
+
+
+        // we need special padding and width for 4-column listing
+        .product--box.box--basic {
+            padding: 10px 0 0 10px;
+            width: 33.333333%;
+        }
+
+
+
+
+        // box basic in default 4-column listing
+        // and 1-column (in desktop xl viewport) product box in 5-column emotion
+        .product--box.box--basic,
+        section.emotion--container.emotion--column-4 .emotion--element .product--box.box--emotion {
+
+            // compensate outer padding
+            .box--content {
+                padding: 0;
+
+                // inner container with image, name, price etc
+                .product--info {
+                    padding: 0;
+
+                    // the image link container
+                    // reset position and set specific height of the image to get 4:3 aspect ratio
+                    a.product--image {
+                        display: block;
+                        width: 100%;
+                        position: relative;
+                    }
+
+                    // only one for the name and specific typography
+                    a.product--title {
+                        margin: 5px 0 5px 0;
+                        padding: 0 8px;
+                    }
+
+                    // remove description
+                    .product--description {
+                        display: none;
+                    }
+
+                    // remove actions
+                    .product--actions {
+                        display: none;
+                    }
+
+                    // remove unit price and set default height
+                    .product--price-info {
+                        padding: 0 8px 0 8px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+        .product--box.box--basic {
+
+            // compensate outer padding
+            .box--content {
+
+                // inner container with image, name, price etc
+                .product--info {
+
+                    // the image link container
+                    // reset position and set specific height of the image to get 4:3 aspect ratio
+                    a.product--image {
+                        height: 168px;
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// specific for desktop viewport
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+    // everywhere
+    body {
+
+
+
+        // we need special padding and width for 4-column listing
+        .product--box.box--basic {
+            padding: 10px 0 0 10px;
+            width: 25%;
+        }
+
+
+        // box basic in default 4-column listing
+        // and 1-column (in desktop xl viewport) product box in 5-column emotion
+        .product--box.box--basic,
+        section.emotion--container.emotion--column-5 .col-xl-1 .product--box.box--emotion {
+
+            // compensate outer padding
+            .box--content {
+                padding: 0;
+
+                // inner container with image, name, price etc
+                .product--info {
+                    padding: 0;
+
+                    // the image link container
+                    // reset position and set specific height of the image to get 4:3 aspect ratio
+                    a.product--image {
+                        display: block;
+                        width: 100%;
+                        height: 168px;
+                        position: relative;
+                    }
+
+                    // only one for the name and specific typography
+                    a.product--title {
+                        margin: 5px 0 5px 0;
+                        padding: 0 8px;
+                    }
+
+                    // remove description
+                    .product--description {
+                        display: none;
+                    }
+
+                    // remove actions
+                    .product--actions {
+                        display: none;
+                    }
+
+                    // remove unit price and set default height
+                    .product--price-info {
+                        padding: 0 8px 0 8px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+}
+
+
+
+
+
+
+// fix the image in emotion box
+// make it fill the container completly with intact aspect ratio
+section.emotion--container.emotion--column-5 .col-xl-1 .product--box.box--emotion,
+section.emotion--container.emotion--column-4 .emotion--element .product--box.box--emotion,
+section.emotion--container.emotion--column-2 .emotion--element .product--box.box--emotion {
+    .box--content {
+        .product--info {
+            span.image--media img {
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+
+.listing--content {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+
+
+
+.infinite--actions {
+    background: #ffffff;
+    margin-bottom: 10px;
+
+    a.btn {
+        margin: 10px 0;
+    }
+}
+
+
+
+.listing--actions {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    .action--sort {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+
+
+    .listing--actions {
+        border: none;
+        padding: 10px 0 0 0;
+        border-radius: 0;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+
+
+
+    .action--sort .sort--select {
+        margin-bottom: 10px;
+    }
+
+
+
+
+    // replace default percentage margins and paddigns with default 10px borders
+    .listing {
+        margin: -10px 0 0 -10px;
+        padding: 0 0 10px 0;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    .action--sort .sort--select {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    .listing--actions {
+
+        .action--sort {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    // top paging
+    .listing--actions .listing--paging {
+        border-top: 10px solid @color-background-gray;
+
+        .paging--link {
+            border-radius: 0;
+        }
+    }
+
+    // bottom paging
+    .listing--bottom-paging {
+        background: #ffffff;
+        border-radius: 0;
+        border: 0;
+
+        .panel--paging .paging--link {
+            border-radius: 0;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+// specific for manufacturer
+@media screen and(min-width: @desktopViewportWidth) {
+
+
+    body.is--ctl-listing.is--act-manufacturer {
+        section.content-main.container {
+            /* this is for default supplier page */
+            // padding-top: 10px;
+
+            /* with cbax supplier modified plugin */
+            padding-top: 0;
+
+
+
+            div.content {
+
+                // faulty margin for header panel
+                div.vendor--info.panel {
+                    margin-bottom: 10px;
+                }
+
+                // the sorting is empty on supplier page and we have to hide it
+                div.listing--wrapper {
+                    div.listing--actions.ost-listing-filter--sorting {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+// remove topseller from every listing
+.listing--content div.topseller {
+    display: none;
+}

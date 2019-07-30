@@ -1,0 +1,502 @@
+/**
+ * Einrichtungshaus Ostermann GmbH & Co. KG - Ostermann Trends Theme
+ *
+ * @package   OstOstermannTrendsTheme
+ *
+ * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
+ * @copyright 2018 Einrichtungshaus Ostermann GmbH & Co. KG
+ * @license   proprietary
+ */
+
+
+
+body {
+
+    footer.footer-main {
+
+
+        .footer-minimal {
+            display: none;
+        }
+
+        .navigation--link {
+            line-height: 1.7;
+            padding: 0;
+        }
+
+        border: none;
+        background-color: #ffffff;
+
+        .container {
+            background-color: @color-background-gray;
+
+            .grid--container {
+
+                display: -ms-grid;
+                -ms-grid-columns: 1fr 10px 1fr;
+                -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto 10px auto 10px auto;
+
+                display: grid;
+                grid-template-columns: repeat( 2, 1fr );
+                grid-gap: 10px;
+                background-color: @color-background-gray;
+                padding: 10px;
+
+
+
+                // grid specific for every child and custom childs
+                & > div {
+                    background-color: #ffffff;
+                    grid-column: span 1;
+                    padding: 10px;
+                }
+
+                div.grid--security {
+                    grid-column: span 2;
+                }
+
+                div.grid--newsletter {
+                    grid-column: span 2;
+                }
+
+                div.grid--social-media {
+                    grid-column: span 2;
+                }
+
+                div.grid--seo-content {
+                    grid-column: span 2;
+                }
+
+                // just for ie11
+                div.grid--service {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--stores {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 1;
+                }
+
+                div.grid--payment-methods {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 3;
+                }
+
+                div.grid--dispatch-countries {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 3;
+                }
+
+                div.grid--shops {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 5;
+                }
+
+                div.grid--content {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 5;
+                }
+
+                div.grid--contact {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 7;
+                }
+
+                div.grid--dispach-methods {
+                    -ms-grid-column: 3;
+                    -ms-grid-row: 7;
+                }
+
+                div.grid--security {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 9;
+                    -ms-grid-column-span: 3;
+                }
+
+                div.grid--newsletter {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 11;
+                    -ms-grid-column-span: 3;
+                }
+
+                div.grid--social-media {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 13;
+                    -ms-grid-column-span: 3;
+                }
+
+                div.grid--seo-content {
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 15;
+                    -ms-grid-column-span: 3;
+                }
+
+
+
+
+                // default css
+                & > div {
+
+                    h5 {
+                        margin-top: 0;
+                        line-height: 24px;
+                        text-transform: @footer-h5-text-transform;
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                        padding: 0;
+
+                        li {
+                            line-height: 24px;
+                            list-style-type: disc;
+                        }
+
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+
+                }
+
+
+
+                // specific columns
+                div.grid--payment-methods {
+                    img {
+                        float: left;
+                    }
+                }
+
+                div.grid--dispatch-countries {
+                    img {
+                        margin: auto;
+                    }
+                }
+
+                div.grid--shops {
+                    a {
+                        display: block;
+                        color: inherit;
+                        margin-bottom: 10px;
+
+                        img {
+                            float: left;
+                            margin-right: 10px;
+                        }
+
+                        span {
+                            line-height: 63px;
+                        }
+                    }
+
+                    a:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                div.grid--contact {
+                    span {
+                        line-height: 24px;
+                        display: block;
+                    }
+
+                }
+
+                div.grid--dispach-methods {
+                    h5 {
+                        margin-bottom: 0;
+                    }
+                    img {
+                        margin: auto;
+                    }
+
+                }
+
+
+
+                div.grid--security {
+
+                    div.block-group {
+
+                        p {
+                            width: 45%;
+                        }
+                        div {
+                            width: 45%;
+                            margin-left: 10%;
+                            margin-top: -25px;
+
+                            a {
+                                width: 50%;
+                                float: left;
+
+                                img {
+                                    display: block;
+                                    margin: auto;
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+
+
+
+                div.grid--social-media {
+
+                    div.block-group {
+
+                        p {
+                            width: 45%;
+                        }
+                        div {
+                            width: 45%;
+                            margin-left: 10%;
+                            margin-top: -25px;
+
+                            a {
+                                width: 50%;
+                                float: left;
+
+                                img {
+                                    display: block;
+                                    margin: auto;
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+
+                div.grid--newsletter {
+
+                    div.block-group {
+
+                        > form {
+                            width: 55%;
+                        }
+                        > p {
+                            width: 40%;
+                            margin-left: 5%;
+                        }
+
+                    }
+                }
+
+
+
+
+
+            }
+
+
+
+            .footer--bottom {
+                margin: 0 10px;
+                background: #ffffff;
+                padding-bottom: 10px;
+            }
+
+
+
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+
+
+    body {
+
+        footer.footer-main {
+
+
+
+
+
+            .container {
+
+
+                .grid--container {
+
+                    display: -ms-grid;
+                    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+                    -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+
+                    display: grid;
+                    grid-template-columns: repeat( 5, 1fr );
+
+
+
+                    // grid specific for every child and custom childs
+                    & > div {
+                        grid-column: span 1;
+                    }
+
+                    div.grid--security {
+                        grid-column: span 2;
+                    }
+
+                    div.grid--newsletter {
+                        grid-column: span 3;
+                    }
+
+                    div.grid--social-media {
+                        grid-column: span 2;
+                    }
+
+                    div.grid--seo-content {
+                        grid-column: span 5;
+                    }
+
+                    // just for ie11
+                    div.grid--service {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--stores {
+                        -ms-grid-column: 3;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--payment-methods {
+                        -ms-grid-column: 5;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--dispatch-countries {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--shops {
+                        -ms-grid-column: 9;
+                        -ms-grid-row: 1;
+                    }
+
+                    div.grid--content {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--contact {
+                        -ms-grid-column: 3;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--dispach-methods {
+                        -ms-grid-column: 5;
+                        -ms-grid-row: 3;
+                    }
+
+                    div.grid--security {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 3;
+                        -ms-grid-column-span: 3;
+                    }
+
+                    div.grid--newsletter {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 5;
+                        -ms-grid-column-span: 5;
+                    }
+
+                    div.grid--social-media {
+                        -ms-grid-column: 7;
+                        -ms-grid-row: 5;
+                        -ms-grid-column-span: 3;
+                    }
+
+                    div.grid--seo-content {
+                        -ms-grid-column: 1;
+                        -ms-grid-row: 7;
+                        -ms-grid-column-span: 9;
+                    }
+
+
+
+                }
+
+
+
+
+
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+    body {
+        footer.footer-main {
+            .container {
+                max-width: none;
+
+                .grid--container div.grid--payment-methods img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+    body {
+        footer.footer-main {
+            .container {
+                max-width: 1180px;
+
+                .grid--container div.grid--payment-methods img {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
