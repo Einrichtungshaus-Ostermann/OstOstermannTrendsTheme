@@ -11,6 +11,9 @@
  * 1.0.1
  * - fixed faulty name in composer.json
  *
+ * 1.0.2
+ * - fixed preview.png
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
