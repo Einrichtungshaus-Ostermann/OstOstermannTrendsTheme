@@ -14,6 +14,9 @@
  * 1.0.2
  * - fixed preview.png
  *
+ * 1.0.3
+ * - moved css from child theme to parent theme
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
