@@ -17,6 +17,10 @@
  * 1.0.3
  * - moved css from child theme to parent theme
  *
+ * 1.0.4
+ * - fixed image-zoom
+ * - fixed category-teaser
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
