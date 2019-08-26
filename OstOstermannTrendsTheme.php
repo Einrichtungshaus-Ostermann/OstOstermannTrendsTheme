@@ -21,6 +21,9 @@
  * - fixed image-zoom
  * - fixed category-teaser
  *
+ * 1.0.5
+ * - fixed theme for ost-article-family update
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
