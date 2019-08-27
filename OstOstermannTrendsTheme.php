@@ -24,6 +24,9 @@
  * 1.0.5
  * - fixed theme for ost-article-family update
  *
+ * 1.0.6
+ * - added 3-column and 4-column listing layout
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

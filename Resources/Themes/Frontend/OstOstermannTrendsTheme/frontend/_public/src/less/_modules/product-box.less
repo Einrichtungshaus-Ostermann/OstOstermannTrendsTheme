@@ -350,14 +350,11 @@ body {
     // everywhere
     body {
 
-
-
         // we need special padding and width for 4-column listing
         .product--box.box--basic {
             padding: 10px 0 0 10px;
             width: 25%;
         }
-
 
         // box basic in default 4-column listing
         // and 1-column (in desktop xl viewport) product box in 5-column emotion
@@ -405,12 +402,27 @@ body {
                 }
             }
         }
-
-
-
-
     }
+}
 
+
+
+
+
+
+// 3-column layout for listing
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+    body.is--ctl-listing {
+        div.listing {
+            div.product--box.box--basic.box--3column {
+                width: calc(~'100% / 3');
+
+                .box--content .product--info a.product--image {
+                    height: 226px;
+                }
+            }
+        }
+    }
 }
 
 
