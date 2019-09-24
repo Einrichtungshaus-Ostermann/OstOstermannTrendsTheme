@@ -27,6 +27,9 @@
  * 1.0.6
  * - added 3-column and 4-column listing layout
  *
+ * 1.0.7
+ * - changed price in product-boxes
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
