@@ -33,6 +33,9 @@
  * 1.0.8
  * - removed forced upper-case for topbar menu navigation
  *
+ * 1.0.9
+ * - removed forced upper-case via css for topbar menu navigation
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
