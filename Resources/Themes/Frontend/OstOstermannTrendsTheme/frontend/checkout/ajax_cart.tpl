@@ -23,3 +23,6 @@
     {$smarty.capture.checkout_button}
     {$smarty.capture.checkout_button_disabled}
 {/block}
+
+{* remove "plus shipping costs" *}
+{block name="frontend_checkout_ajax_cart_prices_info"}{/block}

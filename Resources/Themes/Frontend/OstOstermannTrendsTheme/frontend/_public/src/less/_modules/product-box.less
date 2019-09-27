@@ -8,12 +8,18 @@
  * @license   proprietary
  */
 
-
 body {
 
     // every product box (no matter the layout, including emotion)
     // we only set typography stuff like color, font size etc
     .product--box {
+
+        // hide newcomer badge
+        div.product--badges {
+            div.product--badge.badge--newcomer {
+                display: none;
+            }
+        }
 
         // the inner container
         .box--content {

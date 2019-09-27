@@ -36,6 +36,10 @@
  * 1.0.9
  * - removed forced upper-case via css for topbar menu navigation
  *
+ * 1.0.10
+ * - removed "plus shipping costs" link from ajax-cart
+ * - removed newcomer badge
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

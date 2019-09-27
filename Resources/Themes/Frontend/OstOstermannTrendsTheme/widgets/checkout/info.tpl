@@ -7,12 +7,11 @@
 {* add name to default notepad and add service icon *}
 {block name="frontend_index_checkout_actions_notepad"}
 
-
-
-
+    {* snippets *}
     {s name="notepad-link-title" assign="snippetNotepadLinkTitle"}Merkzettel{/s}
     {s name="notepad-item-name" assign="snippetNotepadItemName"}Merkzettel{/s}
 
+    {* notepad entry *}
     <li class="navigation--entry entry--notepad" role="menuitem">
         <a href="{url controller='note'}" title="{$snippetNotepadLinkTitle|escape}" class="btn entry--link">
             <i class="icon--heart"></i>
@@ -25,18 +24,18 @@
         </a>
     </li>
 
-
-
-
+    {* snippets *}
     {s name="service-link-title" assign="snippetServiceLinkTitle"}Service{/s}
     {s name="service-item-name" assign="snippetServiceItemName"}Service{/s}
 
+    {* service entry *}
     <li class="navigation--entry entry--service" role="menuitem">
-        <a href="{url controller='home'}" title="{$snippetServiceLinkTitle|escape}" class="btn entry--link">
+        <a href="{url controller='faq'}" title="{$snippetServiceLinkTitle|escape}" class="btn entry--link">
             <i class="icon--phone"></i>
             <span class="name">{$snippetServiceItemName}</span>
         </a>
     </li>
+
 {/block}
 
 
@@ -46,26 +45,23 @@
     <a href="{url controller='account'}"
        title="{"{if $userInfo}{s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}{$userInfo['firstname']}{s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s} - {/if}{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}"
        class="btn entry--link account--link{if $userInfo} account--user-loggedin{/if}"
-
-
     >
         <i class="icon--account"></i>
         {if $userInfo}
             <span class="account--display navigation--personalized">
-                        <span class="account--display-greeting">
-                            {s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}
-                            {$userInfo['firstname']}
-                            {s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s}
-                        </span>
+                <span class="account--display-greeting">
+                    {s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}
+                    {$userInfo['firstname']}
+                    {s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s}
+                </span>
                 {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
-                    </span>
+            </span>
         {else}
             <span class="account--display">
-                        {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
-                    </span>
+                {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
+            </span>
         {/if}
-
-        <span class="name">Mein Konto</span>
+        <span class="name">{s name="account-item-name"}Mein Konto{/s}</span>
     </a>
 {/block}
 
@@ -83,24 +79,17 @@
                     {s namespace='frontend/index/checkout_actions' name='IndexLinkCart'}{/s}
                 {/if}
             </span>
-
-            <span class="badge is--primary is--minimal cart--quantity{if $sBasketQuantity < 1} is--hidden{/if}">{$sBasketQuantity}</span>
-
+            <span class="badge is--primary is--minimal cart--quantity{if $sBasketQuantity < 1} is--hidden{/if}">
+                {$sBasketQuantity}
+            </span>
             <i class="icon--basket"></i>
-
             <span class="cart--amount">
                 {$sBasketAmount|currency} {s name="Star" namespace="frontend/listing/box_article"}{/s}
             </span>
-
-
-            <span class="name">Warenkorb</span>
-
-
+            <span class="name">
+                {s name="cart-item-name"}Warenkorb{/s}
+            </span>
         </a>
-
         <div class="ajax-loader">&nbsp;</div>
-
-
-
     </li>
 {/block}
