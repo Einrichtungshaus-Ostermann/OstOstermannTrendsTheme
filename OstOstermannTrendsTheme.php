@@ -40,6 +40,13 @@
  * - removed "plus shipping costs" link from ajax-cart
  * - removed newcomer badge
  *
+ * 1.0.11
+ * - removed top margin of first and bottom margin of last element within
+ *   emotion html element
+ * - changed faq urls
+ * - fixed top and botton margin of emotions on index controller
+ * - fixed phone viewports
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

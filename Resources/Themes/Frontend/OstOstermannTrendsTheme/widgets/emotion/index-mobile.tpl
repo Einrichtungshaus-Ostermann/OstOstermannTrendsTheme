@@ -11,6 +11,6 @@
     {$smarty.block.parent}
 
     {* ... *}
-    {$baseWidth = 767}
+    {$baseWidth = 479}
 
 {/block}

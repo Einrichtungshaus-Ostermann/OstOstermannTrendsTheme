@@ -201,18 +201,18 @@ body {
 
 
 
-// everywhere
+// everywhere - only mobile portrait
 body {
 
     .emotion--product .product--box .product--image {
-        height: 284px;
+        height: 176px;
     }
 
 }
 
 
 
-@media screen and(min-width: @tabletViewportWidth) {
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
     body {
 
         .emotion--product .product--box .product--image {
@@ -241,7 +241,49 @@ body {
 
 
 
+// phone portrait for 2-column boxes
+section.emotion--container.emotion--column-2 .emotion--element .product--box.box--emotion {
 
+    // compensate outer padding
+    .box--content {
+        padding: 0;
+
+        // inner container with image, name, price etc
+        .product--info {
+            padding: 0;
+
+            // the image link container
+            // reset position and set specific height of the image to get 4:3 aspect ratio
+            a.product--image {
+                display: block;
+                width: 100%;
+                position: relative;
+            }
+
+            // only one for the name and specific typography
+            a.product--title {
+                margin: 5px 0 5px 0;
+                padding: 0 8px;
+            }
+
+            // remove description
+            .product--description {
+                display: none;
+            }
+
+            // remove actions
+            .product--actions {
+                display: none;
+            }
+
+            // remove unit price and set default height
+            .product--price-info {
+                padding: 0 8px 0 8px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
 
 
 
@@ -250,7 +292,7 @@ body {
 
 
 // ...
-@media screen and(min-width: @tabletViewportWidth) {
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
 
     // everywhere
     body {

@@ -67,42 +67,42 @@
             </div>
             <div class="block-group">
                 <div class="block">
-                    <a href="/faq/allgemeines">
+                    <a href="faq/allgemeines">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-allgemeines-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/bestellung">
+                    <a href="faq/bestellung">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-bestellung-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/bezahlung">
+                    <a href="faq/bezahlung">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-bezahlung-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/auftragsstatus">
+                    <a href="faq/auftragsstatus">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-auftragsstatus-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/lieferung">
+                    <a href="faq/lieferung">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-lieferung-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/reklamation">
+                    <a href="faq/reklamation">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-reklamation-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/services">
+                    <a href="faq/services">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-services-225x225.jpg'}"/>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="/faq/pflegehinweise">
+                    <a href="faq/pflegehinweise">
                         <img src="{link file='frontend/_public/src/img/faq/kunden-service-center-pflegehinweise-225x225.jpg'}"/>
                     </a>
                 </div>
