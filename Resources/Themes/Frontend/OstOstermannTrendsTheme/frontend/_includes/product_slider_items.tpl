@@ -7,8 +7,21 @@
 {* replace the outer slider items with grouped articles to get multiple articles in one column *}
 {block name="frontend_common_product_slider_items"}
 
+    {* remove non-finished groups? *}
+    {assign var="dropNoFullColumns" value=true}
+
     {* force a valid parameter *}
     {$articlesPerColumn = ($articlesPerColumn) ? $articlesPerColumn : 1}
+
+    {* reduce the articles per column if we dont have enought for 1 full view in desktop viewport *}
+    {if $articlesPerColumn == 3 && count($articles) < 15}
+        {$articlesPerColumn = 2}
+    {/if}
+
+    {* same with two columns *}
+    {if $articlesPerColumn == 2 && count($articles) < 10}
+        {$articlesPerColumn = 1}
+    {/if}
 
     {* default values *}
     {$groupedArticles = []}
@@ -33,7 +46,7 @@
     {/foreach}
 
     {* do we have articles in a non-finished group left? *}
-    {if count($currentGroup) > 0}
+    {if count($currentGroup) > 0 && $dropNoFullColumns == false}
         {* add as group *}
         {$groupedArticles[] = $currentGroup}
     {/if}

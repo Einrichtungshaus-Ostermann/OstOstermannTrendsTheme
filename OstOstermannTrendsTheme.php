@@ -47,6 +47,10 @@
  * - fixed top and botton margin of emotions on index controller
  * - fixed phone viewports
  *
+ * 1.0.12
+ * - changed ost-article-family slider to drop unfinished columns and reduce
+ *   the number of rows if necessary
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
