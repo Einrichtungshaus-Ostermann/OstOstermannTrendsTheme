@@ -51,6 +51,10 @@
  * - changed ost-article-family slider to drop unfinished columns and reduce
  *   the number of rows if necessary
  *
+ * 1.0.13
+ * - fixed landing page top margin
+ * - removed category sidebar from supplier-modified plugin
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
