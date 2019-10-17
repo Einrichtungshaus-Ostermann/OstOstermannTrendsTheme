@@ -21,6 +21,13 @@ body {
             }
         }
 
+        // hide percentage badge
+        div.product--badges {
+            div.product--badge.badge--discount {
+                display: none;
+            }
+        }
+
         // the inner container
         .box--content {
             background: #ffffff;
@@ -50,6 +57,11 @@ body {
                     .product--price {
                         height: @font-size-listing-price;
 
+                        // pseudo price
+                        .price--discount {
+                            color: @color-text-red;
+                        }
+
                         // default price
                         .price--default {
                             font-weight: normal;
@@ -60,7 +72,7 @@ body {
 
                             // discount price
                             &.is--discount {
-                                color: @color-text-red;
+                                // color: @color-text-red;
                             }
                         }
                     }

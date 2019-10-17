@@ -55,6 +55,10 @@
  * - fixed landing page top margin
  * - removed category sidebar from supplier-modified plugin
  *
+ * 1.0.14
+ * - removed percentage badge from product-box
+ * - switched colors for discount-price and default-price
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
