@@ -59,6 +59,9 @@
  * - removed percentage badge from product-box
  * - switched colors for discount-price and default-price
  *
+ * 1.0.15
+ * - removed additional panel for enterprise search
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
