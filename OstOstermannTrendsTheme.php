@@ -65,6 +65,9 @@
  * 1.0.16
  * - added css for sovido
  *
+ * 1.0.17
+ * - fixed colors for panel titles on detail page
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
