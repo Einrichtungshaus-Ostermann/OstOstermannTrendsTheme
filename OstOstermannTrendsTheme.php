@@ -62,6 +62,9 @@
  * 1.0.15
  * - removed additional panel for enterprise search
  *
+ * 1.0.16
+ * - added css for sovido
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
