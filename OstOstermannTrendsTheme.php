@@ -68,6 +68,14 @@
  * 1.0.17
  * - fixed colors for panel titles on detail page
  *
+ * 1.0.18
+ * - fixed order of button in ajax-cart for empty cart
+ *
+ * 1.0.19
+ * - fixed tell-a-friend css
+ * - removed payolution info on detail page
+ * - fixed margin for additional-features panel on checkout/confirm
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

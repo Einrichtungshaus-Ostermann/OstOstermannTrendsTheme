@@ -24,5 +24,22 @@
     {$smarty.capture.checkout_button_disabled}
 {/block}
 
+
+
+{* capture with empty basket *}
+{block name='frontend_checkout_ajax_cart_open_checkout_inner_unavailable'}
+    {capture name="checkout_button_unavailable"}
+        {$smarty.block.parent}
+    {/capture}
+{/block}
+
+{* append *}
+{block name='frontend_checkout_ajax_cart_open_basket_unavailable'}
+    {$smarty.block.parent}
+    {$smarty.capture.checkout_button_unavailable}
+{/block}
+
+
+
 {* remove "plus shipping costs" *}
 {block name="frontend_checkout_ajax_cart_prices_info"}{/block}
