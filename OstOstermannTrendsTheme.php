@@ -76,6 +76,9 @@
  * - removed payolution info on detail page
  * - fixed margin for additional-features panel on checkout/confirm
  *
+ * 1.0.20
+ * - removed sidebar from con-cardis finish page
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
