@@ -79,6 +79,9 @@
  * 1.0.20
  * - removed sidebar from con-cardis finish page
  *
+ * 1.0.21
+ * - added meta tags for article details
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
