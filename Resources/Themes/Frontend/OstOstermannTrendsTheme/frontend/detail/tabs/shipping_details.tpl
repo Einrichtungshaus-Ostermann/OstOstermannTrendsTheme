@@ -48,7 +48,7 @@
 
         {else}
 
-            {s name="shipping-details-content-hermes" force}
+            {s name="shipping-details-content-hermes"}
                 <b>Click &amp; Collect</b><br />
                 Selbstabholung am gewünschten Standort (Witten, Haan, Bottrop, Recklinghausen
                 oder Leverkusen)
@@ -65,7 +65,7 @@
                         Depot befindet.</li>
                     <li>Mögliche Anlieferungszeiträume sind Montags-Freitags zwischen 7:00 Uhr und 11:00, 11:00 Uhr und
                         14:00 Uhr oder 13:00 Uhr und 18:00 Uhr.</li>
-                    <li>Anlieferungen am Samstag sind für 45,- EUR Aufpreis möglich.</li>
+                    <li>Anlieferungen am Samstag sind für {"45"|currency} Aufpreis möglich.</li>
                 </ul>
 
                 {if $sArticle[$theme.attribute_shipping_costs]|floatval == 0}

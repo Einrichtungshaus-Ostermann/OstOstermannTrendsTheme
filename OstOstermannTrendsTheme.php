@@ -85,6 +85,9 @@
  * 1.0.22
  * - fixed shipping details tab for article details
  *
+ * 1.0.23
+ * - fixed shipping details tab for article details
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
