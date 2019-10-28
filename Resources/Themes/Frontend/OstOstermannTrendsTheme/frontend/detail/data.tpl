@@ -20,8 +20,15 @@
 
 
 
-
-
+{* remove tax information *}
+{block name='frontend_detail_data_tax'}
+    <p class="product--tax">
+        {s name="detail-data-price-info-incl-shipping-costs"}
+            {if $sOutputNet}zzgl.{else}inkl.{/if} MwSt.
+            zzgl. {$sArticle[$theme.attribute_shipping_costs]|currency} Versandkosten
+        {/s}
+    </p>
+{/block}
 
 
 
@@ -30,19 +37,13 @@
 
 
 
-
 {* prepend shipping costs to delivery time and put them both into a container *}
 {block name="frontend_detail_data_delivery"}
 
-
-
     <div class="product--delivery-and-shipping-costs">
 
-
-        {* show shipping costs when we dont have a full service price *}
+        {*
         {if $sArticle[$theme.attribute_fullservice] != "2"}
-
-            {* free shipping?! *}
             {if $sArticle[$theme.attribute_shipping_costs]|floatval == 0}
                 <div class="shipping-costs--free">
                     {s name="shipping-costs--free"}Kostenloser Versand{/s}
@@ -52,12 +53,10 @@
                     {s name="shipping-costs"}Versand: {$sArticle[$theme.attribute_shipping_costs]|currency}{/s}
                 </div>
             {/if}
-
         {/if}
-
+        *}
 
         {$smarty.block.parent}
-
 
     </div>
 
