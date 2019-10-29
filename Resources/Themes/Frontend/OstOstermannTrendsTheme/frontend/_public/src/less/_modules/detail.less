@@ -196,7 +196,10 @@ body.is--ctl-detail.is--act-index {
                             }
 
 
-
+                            // remove doubled tax info which may be caused by paypal
+                            p.product--tax[data-modalbox="true"] {
+                                display: none !important;
+                            }
 
 
 

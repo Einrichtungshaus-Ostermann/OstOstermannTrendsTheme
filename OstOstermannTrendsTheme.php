@@ -91,6 +91,10 @@
  * 1.0.24
  * - fixed shipping-costs for article details
  *
+ * 1.0.25
+ * - fixed doubled tax info which may be caused by paypal
+ * - fixed search-result headline
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

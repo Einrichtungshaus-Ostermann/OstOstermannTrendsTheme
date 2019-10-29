@@ -4,8 +4,6 @@
 
 
 
-
-
 {* capture default price to append it after pseudo price *}
 {block name='frontend_detail_data_price_configurator'}
     {capture name="default_price"}
