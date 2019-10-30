@@ -95,6 +95,9 @@
  * - fixed doubled tax info which may be caused by paypal
  * - fixed search-result headline
  *
+ * 1.0.26
+ * - added jump-to-tab jquery for article detail page
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

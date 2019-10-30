@@ -63,7 +63,9 @@ class Theme extends Components\Theme
      *
      * @var array
      */
-    protected $javascript = [];
+    protected $javascript = [
+        'src/js/jquery.ost-jump-to-tab.js',
+    ];
 
     /**
      * {@inheritdoc}
