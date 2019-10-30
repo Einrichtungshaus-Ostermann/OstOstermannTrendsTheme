@@ -49,6 +49,10 @@
 {* remove attributes completely and replace it with custom containers *}
 {block name='frontend_detail_index_buy_container_base_info'}
 
+    <div style="display: none !important;" class="entry--sku">
+        <span class="entry--content">{$sArticle.ordernumber}</span>
+    </div>
+
     <div class="product--actions-container">
         <nav class="product--actions">
             {include file="frontend/detail/actions.tpl"}

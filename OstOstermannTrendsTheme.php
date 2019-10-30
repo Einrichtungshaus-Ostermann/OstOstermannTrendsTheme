@@ -98,6 +98,9 @@
  * 1.0.26
  * - added jump-to-tab jquery for article detail page
  *
+ * 1.0.27
+ * - fixed generating faulty urls when changing variants
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
