@@ -101,6 +101,12 @@
  * 1.0.27
  * - fixed generating faulty urls when changing variants
  *
+ * 1.0.28
+ * - removed variant options without image
+ *
+ * 1.0.29
+ * - changed search result header
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
