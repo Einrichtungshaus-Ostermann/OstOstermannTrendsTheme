@@ -107,6 +107,9 @@
  * 1.0.29
  * - changed search result header
  *
+ * 1.0.30
+ * - added missing snippets to article detail page
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

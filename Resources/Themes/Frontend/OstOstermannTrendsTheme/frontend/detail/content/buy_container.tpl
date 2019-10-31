@@ -4,10 +4,8 @@
 
 
 
-
 {* remove product actions here *}
 {block name="frontend_detail_index_actions"}{/block}
-
 
 
 
@@ -44,8 +42,6 @@
 
 
 
-
-
 {* remove attributes completely and replace it with custom containers *}
 {block name='frontend_detail_index_buy_container_base_info'}
 
@@ -71,17 +67,19 @@
     </div>
 
     <div class="product--security-box">
-        <h5>Sicher einkaufen</h5>
+        <h5>{s name="product--security-box--headline"}Sicher einkaufen{/s}</h5>
         <p>
-            Mit geprüfter Qualität, Sicherheit und Transparenz ist www.ostermann.de in hohem Maße vertrauenswürdig.
+            {s name="product--security-box--claim"}Mit geprüfter Qualität, Sicherheit und Transparenz ist www.ostermann.de in hohem Maße vertrauenswürdig.{/s}
         </p>
         <div>
-            <a href="https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html" target="_blank">
+            <a href="{s name="product--security-box--trusted-shops-url"}https://www.trustedshops.de/bewertung/info_XC1DC221A86DE4CE5E95687AEA1329475.html{/s}" target="_blank">
                 <div class="" style="background-image:url({link file='frontend/_public/src/img/trusted-shop-icons/trusted-shop-logo-212x212.png'});">
                     <ul class="list--unordered is--checked">
+                        {s name="product--security-box--trusted-shops-bullet-points"}
                         <li class="vertrauen">Vertrauenswürdiger Shop</li>
                         <li class="sicherheit">Hohe Sicherheit</li>
                         <li class="zuverlaessig">98,97% Zuverlässig</li>
+                        {/s}
                     </ul>
                 </div>
             </a>
@@ -89,6 +87,3 @@
     </div>
 
 {/block}
-
-
-
