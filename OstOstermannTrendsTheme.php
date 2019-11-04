@@ -113,6 +113,10 @@
  * 1.0.31
  * - removed pseudo price from listing on mobile landscape
  *
+ * 1.0.32
+ * - added wrappers to footer elements
+ * - added default payment icons to footer
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

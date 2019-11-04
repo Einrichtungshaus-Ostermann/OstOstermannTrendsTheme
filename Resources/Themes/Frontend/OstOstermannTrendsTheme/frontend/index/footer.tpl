@@ -34,12 +34,26 @@
 
         <div class="grid--payment-methods">
             <h5>{s name="payment-methods--title"}Zahlungsarten{/s}</h5>
-            {block name="payment-methods--list"}{/block}
+            <div>
+            {block name='payment-methods--list'}
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-paypal.png'}" alt="Paypal" title="Paypal">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-sofort.png'}" alt="Sofort" title="Sofort">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-kreditkarte.png'}" alt="Kreditkarte" title="Kreditkarte">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-credit-plus.png'}" alt="Credit-Plus" title="Credit-Plus">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-vorkasse.png'}" alt="Vorkasse" title="Vorkasse">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-nachnahme.png'}" alt="Nachnahme" title="Nachnahme">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-rechnung.png'}" alt="Rechnung" title="Rechnung">
+                <img src="{link file='frontend/_public/src/img/payment-icons/payment-ratenkauf.png'}" alt="Ratenkauf" title="Ratenkauf">
+            {/block}
+            <div style="clear: both;"></div>
+            </div>
         </div>
 
         <div class="grid--dispatch-countries">
             <h5>{s name="worldwide-shipping--title"}Weltweiter Versand{/s}</h5>
+            <div>
             <img src="{link file='frontend/_public/src/img/footer-icons/multiple-flags.png'}" alt="{s name="worldwide-shipping--img-title"}Weltweiter Versand{/s}" title="{s name="worldwide-shipping--img-title"}Weltweiter Versand{/s}">
+            </div>
         </div>
 
         <div class="grid--shops">
@@ -79,10 +93,12 @@
                     {s name="security--content"}Mit geprüfter Qualität, Sicherheit und Transparenz ist ostermann.de in hohem Maße vertrauenswürdig.{/s}
                 </p>
                 <div class="block">
-                    <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-google.jpg'}" alt="..." title="..."></a>
-                    <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-ssl.jpg'}" alt="..." title="..."></a>
-                    <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-top-shop.jpg'}" alt="..." title="..."></a>
-                    <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-trusted-shop.jpg'}" alt="..." title="..."></a>
+                    {block name="security--content"}
+                        <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-google.jpg'}" alt="..." title="..."></a>
+                        <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-ssl.jpg'}" alt="..." title="..."></a>
+                        <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-top-shop.jpg'}" alt="..." title="..."></a>
+                        <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-trusted-shop.jpg'}" alt="..." title="..."></a>
+                    {/block}
                 </div>
             </div>
         </div>
