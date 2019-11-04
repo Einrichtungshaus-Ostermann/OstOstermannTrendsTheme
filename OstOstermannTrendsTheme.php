@@ -117,6 +117,9 @@
  * - added wrappers to footer elements
  * - added default payment icons to footer
  *
+ * 1.0.33
+ * - removed additional information for enterprise live search in lower viewports
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

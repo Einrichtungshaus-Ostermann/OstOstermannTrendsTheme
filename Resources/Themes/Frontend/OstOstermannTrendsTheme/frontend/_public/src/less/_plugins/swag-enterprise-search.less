@@ -8,10 +8,23 @@
  * @license   proprietary
  */
 
+// remove additional information on search-result page
 body.is--ctl-search {
     div.content.search--content {
         div.panel--elastic {
             display: none;
         }
+    }
+}
+
+// remove by default for lower viewports
+.main-search--results .block-group .block--additional {
+    display: none;
+}
+
+// add additional block for higher viewports again
+@media screen and(min-width: @tabletViewportWidth) {
+    .main-search--results .block-group .block--additional {
+        display: block;
     }
 }
