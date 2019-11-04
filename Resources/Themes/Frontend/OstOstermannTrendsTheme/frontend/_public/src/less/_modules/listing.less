@@ -53,22 +53,11 @@
 
 
 @media screen and(min-width: @tabletViewportWidth) {
-
-
-
-
     .listing--actions {
         border: none;
         padding: 10px 0 0 0;
         border-radius: 0;
     }
-
-
-
-
-
-
-
 }
 
 
@@ -195,3 +184,14 @@
 .listing--content div.topseller {
     display: none;
 }
+
+
+
+
+// remove pseudo price on mobile landscape
+@media screen and(max-width: @phoneLandscapeViewportWidth) {
+    div.listing--content .product--box .product--price .price--pseudo {
+        display: none;
+    }
+}
+

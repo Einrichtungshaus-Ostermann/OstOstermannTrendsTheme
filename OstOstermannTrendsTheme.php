@@ -110,6 +110,9 @@
  * 1.0.30
  * - added missing snippets to article detail page
  *
+ * 1.0.31
+ * - removed pseudo price from listing on mobile landscape
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
