@@ -118,7 +118,11 @@
  * - added default payment icons to footer
  *
  * 1.0.33
- * - removed additional information for enterprise live search in lower viewports
+ * - removed additional information for enterprise live search
+ *   in lower viewports
+ *
+ * 1.0.34
+ * - disable word-wrap for article numbers in lower viewports
  *
  * @package   OstOstermannTrendsTheme
  *
