@@ -51,6 +51,15 @@
                 tabMenuProduct.changeTab(index);
             }
 
+            // we may not have this one
+            if ($($tab).offset().top === 0) {
+                // open the sidebar menu
+                $('*[data-jumpToTab="' + me.opts.tabName + '"]').click();
+
+                // done
+                return;
+            }
+
             // and scroll to the tab
             $('body, html').animate({
                 scrollTop: $($tab).offset().top

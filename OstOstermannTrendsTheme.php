@@ -124,6 +124,10 @@
  * 1.0.34
  * - disable word-wrap for article numbers in lower viewports
  *
+ * 1.0.35
+ * - fixed shipping-costs link for mobile viewport
+ * - fixed missing snippets
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

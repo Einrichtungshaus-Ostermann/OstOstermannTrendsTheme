@@ -11,11 +11,11 @@
     {$smarty.block.parent}
 
     {* append shipping details *}
-    <a href="#" class="tab--link" title="Versandinfo" data-tabName="shipping-details">Versand</a>
+    <a href="#" class="tab--link" title="{s name="shipping-details-description-title"}Versand{/s}" data-tabName="shipping-details">{s name="shipping-details-description-title"}Versand{/s}</a>
 
     {* append supplier details *}
     {if $sArticle.supplierDescription != ""}
-        <a href="#" class="tab--link" title="Hersteller" data-tabName="supplier">Hersteller</a>
+        <a href="#" class="tab--link" title="{s name="supplier-description-title"}Hersteller{/s}" data-tabName="supplier">{s name="supplier-description-title"}Hersteller{/s}</a>
     {/if}
 
 {/block}
@@ -29,12 +29,12 @@
     {$smarty.block.parent}
 
     {* tab container for shipping details *}
-    <div class="tab--container">
+    <div class="tab--container" data-jumpToTab="shipping-details">
         <div class="tab--header">
-            <a href="#" class="tab--title" title="Versandinfo">Versandinfo</a>
+            <a href="#" class="tab--title" title="{s name="shipping-details-title"}Versandinfo{/s}">{s name="shipping-details-title"}Versandinfo{/s}</a>
         </div>
         <div class="tab--preview">
-            Informationen zum Versand
+            {s name="shipping-details-preview"}Weitere Informationen zum Versand...{/s}
         </div>
         <div class="tab--content">
             {include file="frontend/detail/tabs/shipping_details.tpl"}
@@ -45,10 +45,10 @@
     {if $sArticle.supplierDescription != ""}
         <div class="tab--container">
             <div class="tab--header">
-                <a href="#" class="tab--title" title="Hersteller">Hersteller</a>
+                <a href="#" class="tab--title" title="{s name="supplier-title"}Hersteller{/s}">{s name="supplier-title"}Hersteller{/s}</a>
             </div>
             <div class="tab--preview">
-                Informationen zum Hersteller
+                {s name="supplier-preview"}Weitere Informationen zum Hersteller...{/s}
             </div>
             <div class="tab--content">
                 {include file="frontend/detail/tabs/supplier.tpl"}
