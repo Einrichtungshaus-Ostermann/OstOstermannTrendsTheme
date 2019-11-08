@@ -26,6 +26,7 @@
                     {s name="detail-data-shipping--in-stock--package"}Sofort lieferbar, Lieferzeit ca. 1 - 3 Werktage{/s}
                 </span>
                 </p>
+                <meta itemprop="availability" content="InStock">
 
             {else}
 
@@ -35,6 +36,7 @@
                     {s name="detail-data-shipping--in-stock--truck"}Sofort lieferbar, Lieferzeit ca. 7 - 10 Werktage{/s}
                 </span>
                 </p>
+                <meta itemprop="availability" content="InStock">
 
             {/if}
 
@@ -49,6 +51,7 @@
                     {s name="detail-data-shipping--no-stock--last-stock"}Derzeit nicht lieferbar{/s}
                 </span>
                 </p>
+                <meta itemprop="availability" content="OutOfStock">
 
             {else}
 
@@ -66,6 +69,7 @@
                     {$deliveryTimeSnippet}
                 </span>
                 </p>
+                <meta itemprop="availability" content="OutOfStock">
 
             {/if}
 

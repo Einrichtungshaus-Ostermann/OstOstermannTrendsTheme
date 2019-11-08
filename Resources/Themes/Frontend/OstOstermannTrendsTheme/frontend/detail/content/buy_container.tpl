@@ -87,3 +87,16 @@
     </div>
 
 {/block}
+
+
+
+{* add meta information *}
+{block name="frontend_detail_rich_snippets_release_date"}
+
+    {* parent block *}
+    {$smarty.block.parent}
+
+    {* append sku outside of offers here as well *}
+    <meta itemprop="sku" content="{$sArticle.ordernumber}"/>
+
+{/block}

@@ -14,6 +14,7 @@
 {block name='frontend_detail_data_pseudo_price'}
     {$smarty.block.parent}
     {$smarty.capture.default_price}
+    <meta itemprop="priceValidUntil" content="2020-12-31">
 {/block}
 
 
