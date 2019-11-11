@@ -131,6 +131,9 @@
  * 1.0.36
  * - fixed google aggregated data
  *
+ * 1.0.37
+ * - fixed missing css for account controller
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
