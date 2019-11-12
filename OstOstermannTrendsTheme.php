@@ -134,6 +134,9 @@
  * 1.0.37
  * - fixed missing css for account controller
  *
+ * 1.0.38
+ * - fixed fullscreen image within image-gallery
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
