@@ -137,6 +137,9 @@
  * 1.0.38
  * - fixed fullscreen image within image-gallery
  *
+ * 1.0.39
+ * - fixed responsive css for ost-clever-card plugin
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
