@@ -140,6 +140,9 @@
  * 1.0.39
  * - fixed responsive css for ost-clever-card plugin
  *
+ * 1.0.40
+ * - added css for live-shopping
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
