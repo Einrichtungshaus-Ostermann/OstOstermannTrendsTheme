@@ -143,6 +143,9 @@
  * 1.0.40
  * - added css for live-shopping
  *
+ * 1.0.41
+ * - added css for cookie-permission
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
