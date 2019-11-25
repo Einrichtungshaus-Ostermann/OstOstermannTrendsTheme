@@ -146,6 +146,9 @@
  * 1.0.41
  * - added css for cookie-permission
  *
+ * 1.0.42
+ * - fixed title for sovido video container in article details
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
