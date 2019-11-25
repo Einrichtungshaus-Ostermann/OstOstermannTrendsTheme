@@ -152,6 +152,9 @@
  * 1.0.43
  * - fixed footer icons
  *
+ * 1.0.44
+ * - fixed height of product description tab
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
