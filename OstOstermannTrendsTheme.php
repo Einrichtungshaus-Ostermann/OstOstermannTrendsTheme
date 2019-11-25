@@ -149,6 +149,9 @@
  * 1.0.42
  * - fixed title for sovido video container in article details
  *
+ * 1.0.43
+ * - fixed footer icons
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

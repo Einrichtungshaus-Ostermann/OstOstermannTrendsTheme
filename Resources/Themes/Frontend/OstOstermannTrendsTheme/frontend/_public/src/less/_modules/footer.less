@@ -182,19 +182,18 @@ body {
                         display: block;
                         color: inherit;
                         margin-bottom: 10px;
+                        width: 50%;
 
                         img {
-                            float: left;
-                            margin-right: 10px;
+                            margin: auto;
                         }
 
                         span {
-                            line-height: 63px;
+                            display: none;
                         }
                     }
 
                     a:last-child {
-                        margin-bottom: 0;
                     }
                 }
 
@@ -216,38 +215,30 @@ body {
 
                 }
 
-
-
                 div.grid--security {
+                    & > div.block-group {
 
-                    div.block-group {
-
-                        p {
+                        & > div {
                             width: 45%;
                         }
-                        div {
-                            width: 45%;
+
+                        & > div:first-child p {
+                        }
+
+                        & > div:last-child {
                             margin-left: 10%;
-                            margin-top: -25px;
 
                             a {
                                 width: 50%;
-                                float: left;
 
                                 img {
                                     display: block;
                                     margin: auto;
-
                                 }
                             }
                         }
-
                     }
                 }
-
-
-
-
 
                 div.grid--social-media {
 

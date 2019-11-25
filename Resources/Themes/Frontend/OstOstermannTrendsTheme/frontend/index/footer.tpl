@@ -87,11 +87,13 @@
         </div>
 
         <div class="grid--security">
-            <h5>{s name="security--title"}Geprüfte Sicherheit{/s}</h5>
             <div class="block-group">
-                <p class="block">
-                    {s name="security--content"}Mit geprüfter Qualität, Sicherheit und Transparenz ist ostermann.de in hohem Maße vertrauenswürdig.{/s}
-                </p>
+                <div class="block">
+                    <h5>{s name="security--title"}Geprüfte Sicherheit{/s}</h5>
+                    <p>
+                        {s name="security--content"}Mit geprüfter Qualität, Sicherheit und Transparenz ist ostermann.de in hohem Maße vertrauenswürdig.{/s}
+                    </p>
+                </div>
                 <div class="block">
                     {block name="security--content"}
                         <a href="google.de"><img src="{link file='frontend/_public/src/img/footer-icons/security-google.jpg'}" alt="..." title="..."></a>
