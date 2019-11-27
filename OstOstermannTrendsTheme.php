@@ -158,6 +158,9 @@
  * 1.0.45
  * - added color-badge to product-box in listing
  *
+ * 1.0.46
+ * - removed color-badge from every product-box except listing
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

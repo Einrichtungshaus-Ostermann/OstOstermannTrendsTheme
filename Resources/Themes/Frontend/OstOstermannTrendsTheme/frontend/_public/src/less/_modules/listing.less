@@ -173,18 +173,10 @@
 
 
 
-
-
-
-
-
-
-
 // remove topseller from every listing
 .listing--content div.topseller {
     display: none;
 }
-
 
 
 
@@ -197,14 +189,22 @@
 
 
 
-// color badge for every listing
+// default color badge outside of the listing
 div.product--box img.article--color-badge {
-    display: block;
+    display: none;
     position: absolute;
-    width: 100px;
-    height: 54px;
-    top: 114px;
-    right: 0;
     z-index: 1000;
 }
 
+// only show it in listing
+body.is--ctl-listing.is--act-index {
+    div.listing {
+        div.product--box img.article--color-badge {
+            display: block;
+            width: 100px;
+            height: 54px;
+            top: 114px;
+            right: 0;
+        }
+    }
+}
