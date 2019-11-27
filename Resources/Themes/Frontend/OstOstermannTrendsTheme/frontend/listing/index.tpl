@@ -7,10 +7,7 @@
 {* insert emotion on top of the page *}
 {block name="frontend_index_content_left"}
 
-
     {$emotionViewports = [0 => 'xl', 1 => 'l', 2 => 'm', 3 => 's', 4 => 'xs']}
-
-
 
     {if $hasEmotion}
         {$fullscreen = false}
@@ -49,9 +46,6 @@
         {/block}
     {/if}
 
-
-
     {$smarty.block.parent}
-
 
 {/block}

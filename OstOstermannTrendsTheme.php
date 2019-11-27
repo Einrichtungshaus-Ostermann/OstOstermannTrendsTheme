@@ -155,6 +155,9 @@
  * 1.0.44
  * - fixed height of product description tab
  *
+ * 1.0.45
+ * - added color-badge to product-box in listing
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
