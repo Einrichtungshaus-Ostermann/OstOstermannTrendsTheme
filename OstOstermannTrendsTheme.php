@@ -161,6 +161,9 @@
  * 1.0.46
  * - removed color-badge from every product-box except listing
  *
+ * 1.0.47
+ * - added css for pmsw-cookie-consent-pro plugin
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
