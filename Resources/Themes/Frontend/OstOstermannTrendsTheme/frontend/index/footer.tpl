@@ -82,8 +82,13 @@
         </div>
 
         <div class="grid--dispach-methods">
-            <h5>{s name="dispach-methods--title"}Versand{/s}</h5>
-            <img src="{link file='frontend/_public/src/img/footer-icons/dispatch-methods.jpg'}" alt="{s name="dispach-methods--img-title"}Versand{/s}" title="{s name="dispach-methods--img-title"}Versand{/s}">
+            <h5>{s name="dispatch-methods--title"}Versand{/s}</h5>
+            <div>
+                <img src="{link file='frontend/_public/src/img/shipping-icons/shipping-dhl.jpg'}" alt="{s name="dispatch-methods--dhl-img-alt"}DHL{/s}" title="{s name="dispatch-methods--dhl-img-title"}DHL{/s}">
+                <img src="{link file='frontend/_public/src/img/shipping-icons/shipping-hermes.jpg'}" alt="{s name="dispatch-methods--hermes-img-alt"}Hermes{/s}" title="{s name="dispatch-methods--hermes-img-title"}Hermes{/s}">
+                <img src="{link file='frontend/_public/src/img/shipping-icons/shipping-self-dispatch.jpg'}" alt="{s name="dispatch-methods--self-dispatch-img-alt"}Auslieferung{/s}" title="{s name="dispatch-methods--self-dispatch-img-title"}Auslieferung{/s}">
+                <img src="{link file='frontend/_public/src/img/shipping-icons/shipping-pickup.jpg'}" alt="{s name="dispatch-methods--pickup-img-alt"}Selbstabholung{/s}" title="{s name="dispatch-methods--pickup-img-title"}Selbstabholung{/s}">
+            </div>
         </div>
 
         <div class="grid--security">

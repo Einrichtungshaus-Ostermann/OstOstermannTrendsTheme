@@ -164,6 +164,9 @@
  * 1.0.47
  * - added css for pmsw-cookie-consent-pro plugin
  *
+ * 1.0.48
+ * - changed shipping icons in footer
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
