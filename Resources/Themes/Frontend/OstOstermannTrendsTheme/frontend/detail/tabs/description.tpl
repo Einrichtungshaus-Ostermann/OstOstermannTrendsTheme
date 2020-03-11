@@ -22,9 +22,22 @@
 {block name='frontend_detail_description_properties'}
     {if $sArticle.sProperties}
         <div class="content--title product-properties--title">
-            Produkteigenschaften
+            {s name="properties-title"}Produkteigenschaften{/s}
         </div>
-        {$smarty.block.parent}
+
+        <div class="product--properties panel has--border">
+            <table class="product--properties-table">
+                {foreach $sArticle.sProperties as $sProperty}
+                    {if in_array($sProperty.name|strtolower, $ostOstermannTrendsThemeFilterProperties)}
+                        {continue}
+                    {/if}
+                    <tr class="product--properties-row">
+                        <td class="product--properties-label is--bold">{$sProperty.name|escape}:</td>
+                        <td class="product--properties-value">{$sProperty.value|escape}</td>
+                    </tr>
+                {/foreach}
+            </table>
+        </div>
     {/if}
 {/block}
 

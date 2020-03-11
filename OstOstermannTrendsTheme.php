@@ -167,6 +167,9 @@
  * 1.0.48
  * - changed shipping icons in footer
  *
+ * 1.0.49
+ * - added plugin configuration to filter properties in article details
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+        <element type="button">
+            <name>defaultButton</name>
+            <label><![CDATA[<b>Allgemeine Einstellungen</b>]]></label>
+        </element>
+
+        <element type="button">
+            <name>articleDetailsButton</name>
+            <label><![CDATA[<b>Artikeldetailseite Einstellungen</b>]]></label>
+        </element>
+
+        <element type="textarea">
+            <name>filterProperties</name>
+            <label>Eigenschaften filtern</label>
+            <value><![CDATA[Flächengewicht
+Florhöhe]]></value>
+            <description>Alle Eigenschaften mit diesem Namen werden gefiltert.</description>
+        </element>
+
+    </elements>
+</config>
