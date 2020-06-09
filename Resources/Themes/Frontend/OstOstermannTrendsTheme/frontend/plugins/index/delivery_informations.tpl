@@ -13,6 +13,7 @@
         {* get attributes based on available data *}
         {$package = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( $theme.attribute_shipping_method ) : $sArticle[$theme.attribute_shipping_method]}
         {$deliveryTime = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( $theme.attribute_delivery_time ) : $sArticle[$theme.attribute_delivery_time]}
+        {$dropShipping = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( 'attr23' ) : $sArticle['attr23']}
 
         {* do we have the article in stock? *}
         {if $sArticle.instock > 0}
@@ -20,23 +21,53 @@
             {* are we sending as default dhl package? *}
             {if $package == "P"}
 
-                <p class="delivery--information">
-                <span class="delivery--text delivery--green">
-                    <i class="delivery--status-icon delivery--status-green"></i>
-                    {s name="detail-data-shipping--in-stock--package"}Sofort lieferbar, Lieferzeit ca. 1 - 3 Werktage{/s}
-                </span>
-                </p>
-                <meta itemprop="availability" content="InStock">
+                {* dropshipping? *}
+                {if $dropShipping == '1'}
+
+                    <p class="delivery--information">
+                    <span class="delivery--text delivery--green">
+                        <i class="delivery--status-icon delivery--status-green"></i>
+                        {s name="detail-data-shipping--in-stock--package--dropshipping"}Sofort lieferbar, Lieferzeit ca. 2 - 4 Werktage{/s}
+                    </span>
+                    </p>
+                    <meta itemprop="availability" content="InStock">
+
+                {else}
+
+                    <p class="delivery--information">
+                    <span class="delivery--text delivery--green">
+                        <i class="delivery--status-icon delivery--status-green"></i>
+                        {s name="detail-data-shipping--in-stock--package"}Sofort lieferbar, Lieferzeit ca. 1 - 3 Werktage{/s}
+                    </span>
+                    </p>
+                    <meta itemprop="availability" content="InStock">
+
+                {/if}
 
             {else}
 
-                <p class="delivery--information">
-                <span class="delivery--text delivery--green">
-                    <i class="delivery--status-icon delivery--status-green"></i>
-                    {s name="detail-data-shipping--in-stock--truck"}Sofort lieferbar, Lieferzeit ca. 7 - 10 Werktage{/s}
-                </span>
-                </p>
-                <meta itemprop="availability" content="InStock">
+                {* dropshipping? *}
+                {if $dropShipping == '1'}
+
+                    <p class="delivery--information">
+                    <span class="delivery--text delivery--green">
+                        <i class="delivery--status-icon delivery--status-green"></i>
+                        {s name="detail-data-shipping--in-stock--truck--dropshipping"}Sofort lieferbar, Lieferzeit ca. 7 - 10 Werktage{/s}
+                    </span>
+                    </p>
+                    <meta itemprop="availability" content="InStock">
+
+                {else}
+
+                    <p class="delivery--information">
+                    <span class="delivery--text delivery--green">
+                        <i class="delivery--status-icon delivery--status-green"></i>
+                        {s name="detail-data-shipping--in-stock--truck"}Sofort lieferbar, Lieferzeit ca. 7 - 10 Werktage{/s}
+                    </span>
+                    </p>
+                    <meta itemprop="availability" content="InStock">
+
+                {/if}
 
             {/if}
 

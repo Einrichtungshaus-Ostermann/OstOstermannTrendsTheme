@@ -170,6 +170,12 @@
  * 1.0.49
  * - added plugin configuration to filter properties in article details
  *
+ * 1.0.50
+ * - added delivery time for drop-shipping articles
+ *
+ * 1.0.51
+ * - removed and changed snippets from finish page
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
