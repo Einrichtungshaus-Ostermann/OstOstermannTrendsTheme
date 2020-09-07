@@ -16,5 +16,10 @@
             <tag name="shopware.event_listener" method="onPostDispatch" event="Enlight_Controller_Action_PostDispatchSecure_Frontend" />
         </service>
 
+        <service id="ost_ostermann_trends_theme.listeners.controllers.frontend.detail" class="OstOstermannTrendsTheme\Listeners\Controllers\Frontend\Detail">
+            <argument type="service" id="ost_ostermann_trends_theme.configuration" />
+            <tag name="shopware.event_listener" method="onPostDispatch" event="Enlight_Controller_Action_PostDispatchSecure_Frontend_Detail" />
+        </service>
+
     </services>
 </container>

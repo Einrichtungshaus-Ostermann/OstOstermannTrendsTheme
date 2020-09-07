@@ -9,7 +9,7 @@
 
     {* attribute set for article? *}
     {if is_array($sArticle.attributes) && isset($sArticle.attributes['core']) && $sArticle.attributes['core']->get('tpl_color_badge') == '1'}
-        <img class="article--color-badge" src="https://sw50.ostermann.de/themes/Frontend/Ostermann/frontend/_public/src/img/badge-300x162.png" alt="Farbauswahl" title="Farbauswahl"/>
+        <img class="article--color-badge" src="https://www.ostermann.de/media/image/5a/64/10/badge-300x162.png" alt="Farbauswahl" title="Farbauswahl"/>
     {/if}
 
     {* append parent*}

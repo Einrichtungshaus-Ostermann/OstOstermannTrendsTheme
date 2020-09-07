@@ -176,6 +176,12 @@
  * 1.0.51
  * - removed and changed snippets from finish page
  *
+ * 1.0.52
+ * - added variant properties from attributes
+ * - removed decline-cookie-permission button
+ * - added double height for product name in listing container
+ * - fixed color-badge image
+ *
  * @package   OstOstermannTrendsTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
